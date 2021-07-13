@@ -72,9 +72,15 @@ class HomePage extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Padding(
               padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 32.0),
-              child: Text(
-                'Made with Flutter 💙 by Chintan',
-                style: TextStyle(color: ColorPalette.PRIMARY_TEXT_COLOR),
+              child: TextButton(
+                onPressed: () {
+                  html.window.open('https://chintanparmar.com/', 'Chintan');
+                },
+                child: Text(
+                  'Made with Flutter 💙 by Chintan',
+                  style: TextStyle(
+                      color: ColorPalette.PRIMARY_TEXT_COLOR, fontSize: 12),
+                ),
               ),
             ))
       ],
