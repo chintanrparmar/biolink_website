@@ -1,6 +1,7 @@
 import 'dart:html' as html;
 
 import 'package:biolink_website/data/list_db.dart';
+import 'package:biolink_website/utils/color_palette.dart';
 import 'package:biolink_website/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +34,7 @@ class HomePage extends StatelessWidget {
                       new TextSpan(
                           text: Constants.NAME,
                           style: TextStyle(
-                            color: Colors.deepOrange,
+                            color: Colors.white.withOpacity(0.8),
                             fontFamily: "Roboto",
                           ))
                     ]),
@@ -45,21 +46,13 @@ class HomePage extends StatelessWidget {
                 Constants.PROFILE_DESC,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: ColorPalette.PRIMARY_TEXT_COLOR,
                   fontSize: 18.0,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w100,
                 ),
               ),
             ),
-            /* SizedBox(
-          height: 20.0,
-          width: 150.0,
-          child: Divider(
-            color: Colors.grey.shade900,
-          ),
-        ), */
-
             Row(
                 mainAxisSize: MainAxisSize.min,
                 children: ListDB.socialButtons
@@ -81,7 +74,7 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 32.0),
               child: Text(
                 'Made with Flutter 💙 by Chintan',
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: ColorPalette.PRIMARY_TEXT_COLOR),
               ),
             ))
       ],

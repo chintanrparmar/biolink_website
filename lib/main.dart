@@ -1,6 +1,7 @@
 import 'dart:html' as html;
 
 import 'package:biolink_website/screens/homepage.dart';
+import 'package:biolink_website/utils/color_palette.dart';
 import 'package:biolink_website/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
           gradient: LinearGradient(
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
-              colors: [Color(0xFF012F58), Color(0xFF001B33)]),
+              colors: [
+                ColorPalette.GRADIENT_COLOR_START,
+                ColorPalette.GRADIENT_COLOR_END
+              ]),
         ),
         child: Scaffold(
           backgroundColor: Colors.transparent,
@@ -29,6 +33,7 @@ class MyApp extends StatelessWidget {
             },
             child: Icon(Icons.picture_as_pdf_rounded),
             tooltip: 'Download Resume',
+            backgroundColor: ColorPalette.GRADIENT_COLOR_END,
           ),
         ),
       ),
