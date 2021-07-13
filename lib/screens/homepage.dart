@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              radius: 50.0,
+              radius: 60.0,
               backgroundImage: NetworkImage(Constants.PROFILE_PIC_URL),
             ),
             Padding(
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0.0, 18.0, 0.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(10.0, 18.0, 10.0, 10.0),
               child: Text(
                 Constants.PROFILE_DESC,
                 textAlign: TextAlign.center,
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
         Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 32.0),
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),
               child: TextButton(
                 onPressed: () {
                   html.window.open('https://chintanparmar.com/', 'Chintan');
