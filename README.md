@@ -1,6 +1,8 @@
 # BioLink Website
 
 A simple, classy, responsive one-page bio link portfolio website for pretty much anything.
+![Cover Image](https://github.com/chintanrparmar/biolink_website/blob/main/screenshots/screenshot.png)
+
 
 ## Built With
 
